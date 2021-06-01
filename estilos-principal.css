@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); /*'Great Vibes', cursive*/
+:root {
+    --miOpacidad1: #1a1a1aCC;
+    --miOpacidad2: #1a1a1a54;
+    
+    --miblanco1: white;
+    --minegro1: black;
+    --minegro2: #111111;
+    --minegro3: #1D1D1D;
+    --migris1: #9c9c9c;
+    --minaranja1: orange;
+}
+.caja-osc {
+    background: var(--miOpacidad1);
+    border-radius: 5px;
+    padding: 40px;
+}
+.caja-trans {
+    background: var(--miOpacidad2);
+}
+.h-total {
+    height: 100vh;
+}
+.centrar-FB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Tx-grd {
+    text-align: center;
+}
+.Tx-grd h1 {
+    font-size: 5rem;
+    font-weight: 700; 
+}
+.Tx-grd h2 {
+    font-size: 2rem;
+}
+
+/* Estilos globales
+-------------------------------------------------- */
+
+/* Padding debajo del footer de página y del body de texto más claro */
+body {
+    background-image: url('Fondos/fondo1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--miblanco1);
+    font-family: Woodland;
+}
+
+/* Navegacion
+-------------------------------------------------- */
+
+nav {
+    background: var(--minaranja1);
+}
+/* Agrega estilos al enlace */
+.logo {
+    line-height: 50px;
+}
+.navbar-brand {
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border: 3px solid var(--minaranja1); 
+    border-radius: 8px;
+    padding: 10px;
+}
+.logo a:hover {
+    transition-duration: 1s;
+    border-color: var(--miblanco1);
+}
+ul li, .reservacion {
+    font-family: Arial, sans-serif;
+    border-bottom: 4px solid var(--minaranja1);
+    margin-right: 15px;
+    font-size: 18px;
+}
+ul li:hover, .reservacion:hover {
+    transition-duration: 0.6s;
+    border-color: var(--miblanco1);
+    letter-spacing: 4px;
+}
+
+/* Inicio pag
+-------------------------------------------------- */
+
+
+#Inicio-pag { /*----------Inicio----------*/
+    background-image: url('Fondos/inicio1.jpg');
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size: cover;
+    color: var(--miblanco1);
+}
+#Inicio-pag h1 {
+    font-size: 8rem;
+    letter-spacing: 10px;
+    font-family: 'Great Vibes', cursive;
+}
+#Inicio-pag h2 {
+    font-size: 2rem;
+}
+  
+/* Carrusel
+-------------------------------------------------- */
+
+.f-c1 {
+    background-image: url('Fondos/carta1.jpg');
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size: cover;
+}
+.f-c2 {
+    background-image: url('Fondos/carta2.jpg');
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size: cover;
+}
+.f-c3 {
+    background-image: url('Fondos/carta3.jpg');
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size: cover;
+}
+/* Carousel clase base */
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Posicionamiento de la imagen */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+/* Ajustar la heights por el posicionamiento de la img */
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+  
+/* Contenido pag
+-------------------------------------------------- */
+  
+/* Alinear el texto en las tres columnas debajo del carrusel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+/* rtl:end:ignore */
+  
+/* Principales
+------------------------- */
+  
+.featurette-divider {
+    margin: 5rem 0; /* Mas espacio en <hr> */
+}
+/* Adelgazar las rúbricas de marketing */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+}
+#fondo-carta {
+    background-image: url('Fondos/mesa1.jpg');
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size: cover;
+}
+#fondo-cava {
+    background-image: url('Fondos/cava1.jpg');
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size: cover;
+}
+#fondo-ubicacion {
+    background-image: url('Fondos/ubic1.jpg');
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size: cover;
+}
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+.caja-gps {
+    padding: 40px;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+footer {
+    background: var(--minegro3);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 14vh;
+    padding-bottom: 1vh;
+    color: var(--migris1);
+}
+.social {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.social img {
+    width: 100px;
+    margin-right: 10px;
+}
+  
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+  
+@media (min-width: 40em) {
+    /* Aumentar el tamaño del contenido del carrusel */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+@media (min-width: 768px) {
+    .container, .container-sm {
+        max-width: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 100%;
+    }
+}
